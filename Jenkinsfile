@@ -1,4 +1,4 @@
-node(){
+node(Slave1){
     stage('Clone'){
         checkout([$class: 'GitSCM', branches: [[name: '*/SIT-12']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/Srinivas2783/javatomcatmaven.git']]])
         echo "Clone"
